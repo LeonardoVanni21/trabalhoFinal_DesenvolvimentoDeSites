@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="bg-dark">
+
+<head>
+    <title>Imc Bagual (◔◡◔)</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="navigate bg-dark p-4 w-100 d-flex justify-content-evenly">
+        <a href="../pages/calculadora.html" class="text-light">Calculadora</a>
+        <a href="../pages/imc.html" class="text-light">Imc</a>
+        <a href="../pages/json.html" class="text-light">Json</a>
+    </header>
+    <div class="imc">
+        <div class="display">
+            <input type="text" id="result" readonly />
+        </div>
+        <div class="formImc">
+            <input class="mb-2 mt-3" type="text" id="altura" placeholder="Altura - Ex: 1.85"/>
+            <input class="mb-4" type="text" id="peso" placeholder="Peso - Ex: 92"/>
+            <button class="equal-btn" onclick="calculateImc()">Calcular</button>
+        </div>
+
+    </div>
+
+    <span class="seta-esquerda position-absolute top-50 translate-middle-y"><i class="fas fa-arrow-left text-light"
+            onclick="redirectCalculadora()"></i></span>
+    <span class="seta-direita position-absolute top-50 translate-middle-y"><i class="fas fa-arrow-right text-light"
+            onclick="redirectJson()"></i></span>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/imc.js"></script>
+
+</html>

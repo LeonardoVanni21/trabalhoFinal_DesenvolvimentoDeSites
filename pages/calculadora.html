@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="bg-dark">
+
+<head>
+    <title>Calculadora Bagual (◔◡◔)</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="navigate bg-dark p-4 w-100 d-flex justify-content-evenly">
+        <a href="../pages/calculadora.html" class="text-light">Calculadora</a>
+        <a href="../pages/imc.html" class="text-light">Imc</a>
+        <a href="../pages/json.html" class="text-light">Json</a>
+    </header>
+    <div class="calculadora">
+        <div class="display">
+            <input type="text" id="result" readonly />
+        </div>
+        <div class="teclado">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="clearLastDigit()">⇍</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button class="equal-btn" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <span class="seta-direita position-absolute top-50 translate-middle-y"><i class="fas fa-arrow-right text-light"
+            onclick="redirectImc()"></i></span>
+
+</body>
+
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/calculadora.js"></script>
+
+</html>

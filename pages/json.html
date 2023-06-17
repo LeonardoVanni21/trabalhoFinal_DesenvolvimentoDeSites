@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="bg-dark">
+
+<head>
+    <title>Json Bagual (◔◡◔)</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="navigate bg-dark p-4 w-100 d-flex justify-content-evenly">
+        <a href="../pages/calculadora.html" class="text-light">Calculadora</a>
+        <a href="../pages/imc.html" class="text-light">Imc</a>
+        <a href="../pages/json.html" class="text-light">Json</a>
+    </header>
+    <div class="all row w-100 mt-4">
+        <div class="formJson col-6 json me-4">
+            <input class="mb-4" type="email" id="email" placeholder="E-mail" />
+            <input class="mb-4" type="text" maxlength="15" oninput="applyPhoneNumberMask(this)" id="telefone" placeholder="Telefone" />
+            <input class="mb-4" type="text" id="nome" placeholder="Nome" />
+            <input class="mb-5" type="password" id="senha" placeholder="Senha" />
+            <button class="equal-btn mt-5" onclick="makeJson()">Enviar</button>
+        </div>
+        <div class="col-6 json ms-4">
+            <div class="display h-100">
+                <input class="h-100" type="text" id="result" readonly />
+            </div>
+        </div>
+    </div>
+
+    <span class="seta-esquerda position-absolute top-50 translate-middle-y"><i class="fas fa-arrow-left text-light"
+            onclick="redirectImc()"></i></span>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/json.js"></script>
+
+</html>

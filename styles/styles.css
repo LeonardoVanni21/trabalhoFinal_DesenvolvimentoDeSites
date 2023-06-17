@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+  text-decoration: none !important;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+.calculadora,
+.imc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #333;
+}
+
+.all {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content:center;
+}
+
+.json {
+  height: 400px;
+  width: 400px !important;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #333;
+}
+
+.display {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.display input[type="text"] {
+  width: 100%;
+  height: 60px;
+  padding: 8px;
+  font-size: 20px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+}
+
+.teclado button {
+  width: 31.5%;
+  height: 45px;
+  margin: 2px;
+  font-size: 20px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.teclado button.equal-btn {
+  background-color: #28a745;
+}
+
+.teclado button:hover {
+  background-color: #888;
+  cursor: pointer;
+}
+
+.seta-direita {
+  left: 90vw;
+}
+
+.seta-esquerda {
+  right: 90vw;
+}
+
+.seta-direita i,
+.seta-esquerda i {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.formImc button.equal-btn, .formJson button.equal-btn {
+  background-color: #28a745;
+  width: 100%;
+  height: 45px;
+  margin: 2px;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.formImc input, .formJson input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  font-size: 20px;
+  background-color: #646464;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+}
+
+.navigate a {
+  text-align: center;
+  width: 150px;
+  font-size: 22px;
+}
