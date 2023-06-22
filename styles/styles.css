@@ -137,3 +137,10 @@ body {
   border: none;
   border-radius: 9px; 
 }
+
+:root { --color-primary: #5f5f5f; }
+
+.active {
+  background-color: var(--color-primary);
+  border-radius: 20px;
+}
