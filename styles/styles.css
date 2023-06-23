@@ -151,10 +151,12 @@ body {
 
 .active {
   background-color: var(--color-primary);
-  border-radius: 20px;
 }
 
 @media (max-width: 991px) {
+  .navigate a {
+    scale: 1.5;
+  }
   .seta-direita,
   .seta-esquerda {
     display: none;
