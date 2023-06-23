@@ -4,6 +4,10 @@
   text-decoration: none !important;
 }
 
+*:focus {
+  outline: 1px solid rgb(200, 200, 200) !important;
+} 
+
 button {
   padding: 0;
   margin: 0;
@@ -35,7 +39,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .json {
@@ -97,7 +101,8 @@ body {
   cursor: pointer;
 }
 
-.formImc button.equal-btn, .formJson button.equal-btn {
+.formImc button.equal-btn,
+.formJson button.equal-btn {
   background-color: #28a745;
   width: 100%;
   height: 45px;
@@ -108,7 +113,8 @@ body {
   border-radius: 6px;
 }
 
-.formImc input, .formJson input {
+.formImc input,
+.formJson input {
   width: 100%;
   height: 40px;
   padding: 8px;
@@ -116,13 +122,14 @@ body {
   background-color: #646464;
   color: #fff;
   border: none;
-  border-radius: 9px;  
+  border-radius: 9px;
 }
 
 .navigate a {
   text-align: center;
   width: 150px;
-  font-size: 22px;
+  font-size: 25px;
+  border-radius: 20px;
 }
 
 .json .display #result {
@@ -135,12 +142,31 @@ body {
   background-color: #646464;
   color: #fff;
   border: none;
-  border-radius: 9px; 
+  border-radius: 9px;
 }
 
-:root { --color-primary: #5f5f5f; }
+:root {
+  --color-primary: #5f5f5f;
+}
 
 .active {
   background-color: var(--color-primary);
   border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+  .seta-direita,
+  .seta-esquerda {
+    display: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
