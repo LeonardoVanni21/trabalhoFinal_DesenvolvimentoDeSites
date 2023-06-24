@@ -25,27 +25,3 @@ function redirectCalculadora() {
 function redirectJson() {
   window.location.href = "json.html";
 }
-
-$(document).keydown(function (event) {
-  var key = event.key;
-  if (key === "ArrowLeft") {
-    if (filename == "imc.html") {
-      redirectCalculadora();
-    }
-    if (filename == "json.html") {
-      redirectImc();
-    }
-  }
-});
-
-$(document).keydown(function (event) {
-  var key = event.key;
-  if (key === "ArrowRight") {
-    if (filename == "imc.html") {
-      redirectJson();
-    }
-    if (filename == "calculadora.html") {
-      redirectImc();
-    }
-  }
-});
